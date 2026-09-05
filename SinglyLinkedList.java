@@ -103,8 +103,7 @@ public class SinglyLinkedList<E> {
         }
         tail = next;
         E answer = tail.getElement();
-        next.setNext(null);
-        next = null;
+        tail.setNext(null);
         size--;
 
         return answer;
@@ -126,4 +125,6 @@ public class SinglyLinkedList<E> {
         head = tail;
         tail = temp;
     }
+
+    
 }
