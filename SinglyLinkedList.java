@@ -101,8 +101,8 @@ public class SinglyLinkedList<E> {
         while(next.getNext() != tail){
             next = next.getNext();
         }
-        tail = next;
         E answer = tail.getElement();
+        tail = next;
         tail.setNext(null);
         size--;
 
